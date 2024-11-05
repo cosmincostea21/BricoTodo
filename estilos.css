@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Pacifico&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+h1{
+    font-family: "Pacifico", serif;
+    font-size: 50px;
+    color: #D2691E;
+    text-align: center;
+}
+h2{
+    font-family: "Caveat", cursive;
+    color: #00008B; 
+    font-size: 30px;
+}
+h3{
+    font-family: Arial;
+    font-size: 25px;
+    color: #008B8B;
+}
+p,li{
+    font-family: Arial;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    font-weight: bold;
+    color: red;
+}
+a:active{
+    color: green;
+}
+
+table{
+    width: 33%;
+    margin: auto;
+    background-color: antiquewhite;
+}
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-color: brown;
+    
+}
+body{
+    background-image: url(imagenes/fondo.jpg);
+    background-size: 100%;
+    background-color: antiquewhite;
+}

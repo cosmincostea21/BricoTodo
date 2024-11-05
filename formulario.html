@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosform.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="formulario.php" method="post" >
+        <fieldset>
+            <legend>
+                Sus datos
+            </legend>
+            <p>
+                <label for="Nombre">Nombre y apellidos</label>
+                <input type="text" id="Nombre" maxlength="50">
+            </p>
+            <p>
+                <label for="Contraseña">Contraseña</label>
+                <input type="password" id="Contraseña" maxlength="8">
+            </p>
+            <p>
+                <label for="Usuario">Usuario</label>
+                <input type="text" disabled value="anónimo">
+            </p>
+            <p><label for="Niveles">Nivel:</label></p>
+            <p><input type="radio" id="Profesional" name="Nivel">Profesional</p>
+            <p><input type="radio" id="Avanzado" name="Nivel" checked >Avanzado</p>
+            <p><input type="radio" id="Principiante" name="Nivel">Principiante</p>
+        </fieldset>
+        <br>
+        <label for="Paises">Selecciona nacionalidad</label>
+        <select name="Paises" id="Paises">
+            <option value="Paises">Española</option>
+            <option value="Paises">Rumana</option>
+            <option value="Paises">Italiana</option>
+            <option value="Paises">Americana</option>
+        </select>
+        <p>
+            <label for="Descripcion">Descripción</label>
+            <textarea name="Descripcion" id="Descripcion"></textarea>
+        </p>
+        <p>        
+            <input type="checkbox" name="Info" id="info" checked>
+            Deseo recibir información sobre novedades y ofertas
+        </p>
+        <p>
+            <input type="checkbox" name="Restricciones" id="Restricciones">
+            Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre la protección de datos
+        </p>
+        <p>
+            <label for="Foto">Adjuntar foto:</label>
+            <input type="file" name="Adjuntarfoto" id="Foto">
+        </p>
+        <input type="submit" value="Enviar Datos">
+        <input type="reset" value="Borrar Datos">
+
+    </form>
+    
+</body>
+</html>
